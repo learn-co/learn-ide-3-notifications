@@ -165,7 +165,7 @@ class NotificationElement extends HTMLElement
       if packageName? and repoUrl?
         issueButton.textContent = "Create issue on the #{packageName} package"
       else
-        issueButton.textContent = "Create issue on learn-co/learn-ide"
+        issueButton.textContent = "Create issue on learn-co/learn-ide-3"
 
       promises = []
       promises.push @issue.findSimilarIssues()

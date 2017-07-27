@@ -1,10 +1,10 @@
 {
-  "name": "learn-ide-notifications",
+  "name": "learn-ide-3-notifications",
   "main": "./lib/main",
-  "version": "0.66.4",
+  "version": "1.0.0",
   "upstreamVersion": "0.66.1",
   "description": "A tidy fork of atom/notifications used by the Learn IDE",
-  "repository": "https://github.com/learn-co/learn-ide-notifications",
+  "repository": "https://github.com/learn-co/learn-ide-3-notifications",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"

@@ -113,7 +113,7 @@ module.exports =
       .then (r) -> if r.ok then r.json() else Promise.reject(r.statusCode)
 
   currentLearnIDEVersion: ->
-    pkg = atom.packages.loadPackage('learn-ide')
+    pkg = atom.packages.loadPackage('learn-ide-3')
     pkg?.metadata.version
 
   checkAtomUpToDate: ->

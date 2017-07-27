@@ -20,7 +20,7 @@ class NotificationIssue
 
   findSimilarIssues: ->
     repoUrl = @getRepoUrl()
-    repoUrl = 'learn-co/learn-ide' unless repoUrl?
+    repoUrl = 'learn-co/learn-ide-3' unless repoUrl?
     repo = repoUrl.replace /http(s)?:\/\/(\d+\.)?github.com\//gi, ''
     issueTitle = @getIssueTitle()
     query = "#{issueTitle} repo:#{repo}"
@@ -54,7 +54,7 @@ class NotificationIssue
   getIssueUrl: ->
     @getIssueBody().then (issueBody) =>
       repoUrl = @getRepoUrl()
-      repoUrl = 'https://github.com/learn-co/learn-ide' unless repoUrl?
+      repoUrl = 'https://github.com/learn-co/learn-ide-3' unless repoUrl?
       "#{repoUrl}/issues/new?title=#{@encodeURI(@getIssueTitle())}&body=#{@encodeURI(issueBody)}"
 
   encodeURI: (str) ->
